@@ -1,0 +1,98 @@
+@import url('https://fonts.google.com/noto/specimen/Noto+Sans+HK?preview.text=Bienvenido%20al%20hotel%20USM');
+
+  .Bienvenida {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Noto Sans Hong Kong', sans-serif;
+  }
+
+ 
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../imagenes/fondo.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .contenedor{
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    background: rgba(140, 139, 229, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+  }
+
+  button {
+    color:#fff;
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 75px;
+    padding: 20px;
+    font-size: 16px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background: #183153;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:after {
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #ffd401;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+  }
+  
+  button:hover::after {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+  
+  button span {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 18px 25px;
+    color: #fff;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    z-index: 20;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover span {
+    color: #183153;
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  
+  @keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+  
+    50% {
+      transform: scale(0.95);
+    }
+  
+    100% {
+      transform: scale(1);
+    }
+  }
+  
